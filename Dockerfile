@@ -23,7 +23,7 @@ RUN wget http://downloads.arduino.cc/arduino-${ARDUINO_VER}-linux64.tar.xz && \
 RUN wget wget http://energia.nu/downloads/downloadv4.php?file=energia-${ENERGIA_VER}-linux64.tar.xz && \
     tar xf energia-${ENERGIA_VER}-linux64.tar.xz && \
     mv energia-${ENERGIA_VER} /usr/local/share/energia && \
-    ln -s /usr/local/share/energia/energia /usr/local/bin/energia &&
+    ln -s /usr/local/share/energia/energia /usr/local/bin/energia && \
     rm -rf energia-${ENERGIA_VER}-linux64.tar.xz
 
 RUN git clone https://github.com/Seeed-Studio/Grove_Digital_Light_Sensor.git
